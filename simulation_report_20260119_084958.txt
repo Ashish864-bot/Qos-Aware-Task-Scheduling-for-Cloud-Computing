@@ -1,0 +1,214 @@
+================================================================================
+QoS-AWARE MULTI-OBJECTIVE TASK SCHEDULING SIMULATOR
+SIMULATION REPORT
+================================================================================
+
+Generated: Mon Jan 19 08:49:58 IST 2026
+
+--------------------------------------------------------------------------------
+SIMULATION PARAMETERS
+--------------------------------------------------------------------------------
+Alpha (Time Weight): 0.5
+Beta (Cost Weight): 0.5
+Objective Function: QoS Score = α × Time + β × Cost
+
+--------------------------------------------------------------------------------
+TASK ALLOCATION RESULTS
+--------------------------------------------------------------------------------
+
+*** QoS-Aware Multi-Objective Scheduler ***
+Task     VM       Time(s)      Cost($)      Deadline   Budget    
+------------------------------------------------------------
+10       4        1.7576       0.2436       Met        Met       
+8        4        1.2133       0.1667       Met        Met       
+12       4        2.3772       0.3312       Met        Met       
+11       4        2.1021       0.2923       Met        Met       
+6        4        2.3155       0.3225       Met        Met       
+19       4        1.0130       0.1384       Met        Met       
+1        4        2.4846       0.3464       Met        Met       
+13       4        0.3600       0.0461       Met        Met       
+7        3        3.1912       0.3683       Met        Met       
+3        4        2.0141       0.2799       Met        Met       
+14       4        0.7623       0.1030       Met        Met       
+15       3        2.7952       0.3219       Met        Met       
+18       4        0.5871       0.0782       Met        Met       
+17       4        1.3809       0.1904       Met        Met       
+16       4        0.9018       0.1227       Met        Met       
+9        4        0.6408       0.0858       Met        Met       
+4        3        3.2731       0.3779       Met        Met       
+2        4        1.2564       0.1728       Met        Met       
+5        4        2.5295       0.3527       Met        Met       
+20       2        4.0431       0.3163       Met        Met       
+
+*** First Come First Serve (FCFS) ***
+Task     VM       Time(s)      Cost($)      Deadline   Budget    
+------------------------------------------------------------
+1        1        8.3977       0.3943       Met        Met       
+2        2        2.2790       0.1759       Met        Met       
+3        3        2.6039       0.2995       Met        Met       
+4        4        2.5328       0.3532       Met        Met       
+5        5        6.3334       0.4056       Met        Met       
+6        1        7.8254       0.3671       Met        Met       
+7        2        4.4702       0.3503       Met        Met       
+8        3        1.5708       0.1784       Met        Met       
+9        4        0.6408       0.0858       Met        Met       
+10       5        4.4162       0.2802       Met        Met       
+11       1        7.1036       0.3328       MISSED     Met       
+12       2        4.3038       0.3370       Met        Met       
+13       3        0.4700       0.0494       Met        Met       
+14       4        0.7623       0.1030       Met        Met       
+15       5        5.4215       0.3460       MISSED     Met       
+16       1        3.0423       0.1397       Met        Met       
+17       2        2.5039       0.1938       Met        Met       
+18       3        0.7630       0.0837       Met        Met       
+19       4        1.0130       0.1384       Met        Met       
+20       5        5.5967       0.3574       Met        Met       
+
+*** Random Scheduling ***
+Task     VM       Time(s)      Cost($)      Deadline   Budget    
+------------------------------------------------------------
+1        1        8.3977       0.3943       Met        Met       
+2        4        1.2564       0.1728       Met        Met       
+3        4        2.0141       0.2799       Met        Met       
+4        5        6.3415       0.4062       Met        Met       
+5        1        8.5497       0.4015       Met        Met       
+6        1        7.8254       0.3671       Met        Met       
+7        1        8.3459       0.3918       Met        Met       
+8        4        1.2133       0.1667       Met        Met       
+9        5        1.6428       0.0987       Met        Met       
+10       4        1.7576       0.2436       Met        Met       
+11       3        2.7175       0.3128       Met        Met       
+12       3        3.0723       0.3544       Met        Met       
+13       2        0.6595       0.0469       Met        Met       
+14       3        0.9890       0.1102       Met        Met       
+15       2        3.9157       0.3061       Met        Met       
+16       3        1.1690       0.1313       Met        Met       
+17       2        2.5039       0.1938       Met        Met       
+18       1        1.9775       0.0891       Met        Met       
+19       4        1.0130       0.1384       Met        Met       
+20       5        5.5967       0.3574       Met        Met       
+
+*** Min-Min Scheduling ***
+Task     VM       Time(s)      Cost($)      Deadline   Budget    
+------------------------------------------------------------
+13       4        0.3600       0.0461       Met        Met       
+18       3        0.7630       0.0837       Met        Met       
+9        4        0.6408       0.0858       Met        Met       
+14       2        1.3863       0.1048       Met        Met       
+16       4        0.9018       0.1227       Met        Met       
+19       3        1.3124       0.1481       Met        Met       
+8        5        3.0644       0.1917       Met        Met       
+2        4        1.2564       0.1728       Met        Met       
+17       3        1.7870       0.2037       Met        Met       
+10       2        3.1844       0.2479       Met        Met       
+3        4        2.0141       0.2799       Met        Met       
+11       3        2.7175       0.3128       Met        Met       
+15       1        7.3074       0.3425       MISSED     Met       
+20       4        2.2329       0.3108       Met        Met       
+6        2        4.1923       0.3281       Met        Met       
+12       5        5.9550       0.3809       Met        Met       
+7        3        3.1912       0.3683       Met        Met       
+1        4        2.4846       0.3464       Met        Met       
+5        4        2.5295       0.3527       Met        Met       
+4        3        3.2731       0.3779       Met        Met       
+
+--------------------------------------------------------------------------------
+PERFORMANCE COMPARISON
+--------------------------------------------------------------------------------
+
+Scheduler                       Avg Time(s)   Total Cost     DL Miss%     QoS Sat%
+--------------------------------------------------------------------------------
+QoS-Aware Multi-Objective Scheduler       1.8499       4.6571         0.00       100.00
+First Come First Serve (FCFS)        3.6025       4.9712        10.00        90.00
+Random Scheduling                    3.5479       4.9630         0.00       100.00
+Min-Min Scheduling                   2.5277       4.8077         5.00        95.00
+
+--------------------------------------------------------------------------------
+DETAILED METRICS
+--------------------------------------------------------------------------------
+
+*** QoS-Aware Multi-Objective Scheduler ***
+  Tasks Processed: 20
+  Total Execution Time: 36.9986 s
+  Average Execution Time: 1.8499 s
+  Makespan: 23.6961 s
+  Total Cost: $4.6571
+  Average Cost: $0.2329
+  Deadlines Met: 20/20
+  Budgets Met: 20/20
+  QoS Satisfied: 20/20
+  Throughput: 0.8440 tasks/s
+
+*** First Come First Serve (FCFS) ***
+  Tasks Processed: 20
+  Total Execution Time: 72.0502 s
+  Average Execution Time: 3.6025 s
+  Makespan: 26.3690 s
+  Total Cost: $4.9712
+  Average Cost: $0.2486
+  Deadlines Met: 18/20
+  Budgets Met: 20/20
+  QoS Satisfied: 18/20
+  Throughput: 0.7585 tasks/s
+
+*** Random Scheduling ***
+  Tasks Processed: 20
+  Total Execution Time: 70.9583 s
+  Average Execution Time: 3.5479 s
+  Makespan: 35.0962 s
+  Total Cost: $4.9630
+  Average Cost: $0.2481
+  Deadlines Met: 20/20
+  Budgets Met: 20/20
+  QoS Satisfied: 20/20
+  Throughput: 0.5699 tasks/s
+
+*** Min-Min Scheduling ***
+  Tasks Processed: 20
+  Total Execution Time: 50.5541 s
+  Average Execution Time: 2.5277 s
+  Makespan: 13.0441 s
+  Total Cost: $4.8077
+  Average Cost: $0.2404
+  Deadlines Met: 19/20
+  Budgets Met: 20/20
+  QoS Satisfied: 19/20
+  Throughput: 1.5333 tasks/s
+
+--------------------------------------------------------------------------------
+IMPROVEMENT ANALYSIS
+--------------------------------------------------------------------------------
+
+Comparison of QoS-Aware Multi-Objective Scheduler vs Baseline Schedulers:
+
+vs First Come First Serve (FCFS):
+  Time: +48.65% (better)
+  Cost: +6.32% (better)
+  QoS: +10.00 pp (better)
+
+vs Random Scheduling:
+  Time: +47.86% (better)
+  Cost: +6.16% (better)
+  QoS: +0.00 pp (better)
+
+vs Min-Min Scheduling:
+  Time: +26.81% (better)
+  Cost: +3.13% (better)
+  QoS: +5.00 pp (better)
+
+--------------------------------------------------------------------------------
+CONCLUSIONS
+--------------------------------------------------------------------------------
+
+Best Performance by Category:
+  - Best Execution Time: QoS-Aware Multi-Objective Scheduler
+  - Lowest Cost: QoS-Aware Multi-Objective Scheduler
+  - Highest QoS Satisfaction: QoS-Aware Multi-Objective Scheduler
+
+The QoS-Aware scheduler demonstrates the effectiveness of
+multi-objective optimization in cloud task scheduling by
+balancing execution time, cost, and QoS constraint satisfaction.
+
+================================================================================
+END OF REPORT
+================================================================================
